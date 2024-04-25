@@ -1,0 +1,17 @@
+type Query {
+    getByName(name: String): Group
+    getAllMembers: [Member]
+}
+
+type Group {
+    name: String
+    description: String
+    members: [Member]
+}
+
+type Member {
+    name: String
+    email: String
+    age: Int
+}
+
